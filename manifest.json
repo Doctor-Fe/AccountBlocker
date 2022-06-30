@@ -1,0 +1,27 @@
+{
+    "name": "Account Blocker for Scratch",
+    "version": "1.0.0.0",
+    "manifest_version": 3,
+    "description": "Block accounts you don't want to see.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://scratch.mit.edu/discuss/*"
+            ],
+            "js": [
+                "./background/discuss.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "action": {
+        "default_icon": {
+            "32": "icon.png"
+        },
+        "default_title": "Account Blocker for Scratch 簡易設定画面",
+        "default_popup": "ui/popup/popup.html"
+    }
+}
