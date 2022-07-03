@@ -1,6 +1,6 @@
 {
     "name": "Account Blocker for Scratch",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "manifest_version": 3,
     "description": "Block accounts you don't want to see.",
     "content_scripts": [
