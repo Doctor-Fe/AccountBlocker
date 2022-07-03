@@ -28,12 +28,12 @@ function hideTopics() {
 
 function hide(a) {
     a.style.setProperty("display", "none");
-    a.setAttribute("class", "hided");
+    a.classList.add("hided");
 }
 
 function show(a) {
     a.style.removeProperty("display");
-    a.removeAttribute("class");
+    a.classList.remove("hided");
 }
 
 function showTopics() {
