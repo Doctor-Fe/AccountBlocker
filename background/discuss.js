@@ -38,7 +38,7 @@ function show(a) {
 
 function showTopics() {
     var x = document.getElementsByClassName("hided");
-    for (var i = 0; i < x.length; i++)
+    for (var i = 0; i < x.length; )
     {
         show(x[i]);
     }
