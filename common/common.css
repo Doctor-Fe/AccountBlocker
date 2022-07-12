@@ -1,3 +1,10 @@
 body {
     background-color: rgb(160, 255, 160);
 }
+
+button {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

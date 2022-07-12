@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', setUp);
+window.addEventListener('load', setUp);
 
 // ---- 関数定義 ----
 
@@ -10,7 +10,11 @@ function requestVisible()
     console.log("Sending messages ...");
     chrome.tabs.query({active:true, currentWindow:true}, // 現在アクティブなタブに対して
         (tabs) => {
-            chrome.tabs.sendMessage(tabs[0].id, 'showAllTopics', (response) => {console.log(response ? "Success" : "Error");});
+            chrome.tabs.sendMessage(tabs[0].id, 'showAllTopics',
+                (response) => {
+                    console.log(response ? "Success" : "Error");
+                }
+            );
         }
     );
 }
